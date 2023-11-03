@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "51459379748",
+    "firebase_url": "https://geopathapp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "geopathapp",
+    "storage_bucket": "geopathapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51459379748:android:3cac04115708df478bfeb1",
+        "android_client_info": {
+          "package_name": "com.geopathapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51459379748-ieuss1tm1vioe2pvadn0qa6ic5nqeqai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCowOy1_lM0weygnS_1tq2oikhBAm9tgD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51459379748-ieuss1tm1vioe2pvadn0qa6ic5nqeqai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

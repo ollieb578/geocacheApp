@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/MapToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_500"
+        android:elevation="4dp">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity">
+    </fragment>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createRouteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_above="@id/mapsMenuButton"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mapsMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/menuicon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- https://www.flaticon.com/free-icons/check Check icons created by Maxim Basinski Premium - Flaticon -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submitRouteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/check"
+        android:layout_above="@id/addRouteNodeButton"
+        android:layout_alignParentEnd="true" />
+
+    <!-- https://www.flaticon.com/free-icons/plus Plus icons created by Freepik - Flaticon -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRouteNodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/appplus"
+        android:layout_above="@id/exitCreateRoute"
+        android:layout_alignParentEnd="true" />
+
+    <!-- https://www.flaticon.com/free-icons/close Close icons created by ariefstudio - Flaticon -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/exitCreateRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/exitFollowRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- https://www.flaticon.com/free-icons/location Location icons created by Freepik - Flaticon -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/showCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/location"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
